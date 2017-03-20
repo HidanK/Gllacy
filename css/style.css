@@ -1,0 +1,157 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.list-size {
+    max-width: 1200px;
+    min-width: 900px;
+}
+
+.paddings-side {
+    padding-left: 2.23%;
+    padding-right: 2.23%;
+}
+
+.input-slider {
+    display: none;
+}
+
+.index-container {
+    font-family: "Roboto", Tahoma, sans-serif;
+}
+
+.main-header {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-menu {
+    display: flex;
+}
+
+.main-nav,
+.main-user {
+    display: flex;
+    padding: 0;
+}
+
+.main-nav {
+    margin-left: 25px;
+    margin-right: auto;
+}
+
+.main-nav li,
+.main-user li {
+    list-style: none;
+}
+
+.submenu-catalog {
+    display: none;
+}
+
+.main-nav li {
+    margin-right: 25px;
+}
+
+.main-nav a,
+.main-user a {
+    text-decoration: none;
+}
+
+.hour-time {
+    position: absolute;
+    bottom: -20px;
+    right: 2.23%;
+}
+
+.hour-time span {
+    display: block;
+    text-align: right;
+}
+
+.main-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-slides {
+    overflow: hidden;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slides-container {
+    width: 300%;
+}
+
+.slides-container .slide {
+    width: 700px;
+    float: left;
+}
+
+.button-slider {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    border: 2px solid #000;
+    border-radius: 50%
+}
+
+#button-slider-1:checked ~ .index-container .slider-control label[for="button-slider-1"],
+#button-slider-2:checked ~ .index-container .slider-control label[for="button-slider-2"],
+#button-slider-3:checked ~ .index-container .slider-control label[for="button-slider-3"] {
+    background-color: #fff;
+}
+
+#button-slider-1:checked ~ .index-container {
+    background-color: #849d8f;
+}
+
+#button-slider-2:checked ~ .index-container {
+    background-color: #8996a6;
+}
+
+#button-slider-3:checked ~ .index-container {
+    background-color: #9d8b84;
+}
+
+#button-slider-1:checked ~ .index-container .slides-container {
+    transform: translate(0);
+}
+
+#button-slider-2:checked ~ .index-container .slides-container {
+    transform: translate(-700px);
+}
+
+#button-slider-3:checked ~ .index-container .slides-container {
+    transform: translate(-1400px);
+}
+
+.stocks {
+    display: flex;
+    padding: 0;
+}
+
+.stocks li {
+    list-style: none;
+    max-width: 560px;
+    min-width: 420px;
+}
+
+.stocks li:first-child {
+    margin-right: 2.22%;
+}
