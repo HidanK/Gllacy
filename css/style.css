@@ -8,6 +8,11 @@
     background-color: #fff;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -31,6 +36,8 @@
 .index-container {
     font-family: "Roboto", Tahoma, sans-serif;
 }
+
+/*Header*/
 
 .main-header {
     position: relative;
@@ -81,6 +88,8 @@
     display: block;
     text-align: right;
 }
+
+/*Main-index*/
 
 .main-content {
     margin-left: auto;
@@ -143,15 +152,86 @@
 
 .stocks {
     display: flex;
+    justify-content: space-between;
     padding: 0;
 }
 
 .stocks li {
     list-style: none;
     max-width: 560px;
+    width: 46.66%;
     min-width: 420px;
 }
 
 .stocks li:first-child {
     margin-right: 2.22%;
+}
+
+.hits {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.hit {
+    max-width: 267px;
+    width: 22.22%;
+    min-width: 200px;
+    list-style: none;
+}
+
+.list-features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list-features li {
+    padding-left: 57px;
+    margin-left: 2.22%;
+    width: 37.78%;
+    list-style: none;
+}
+
+.news-subscribe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-subscribe article {
+    list-style: none;
+    max-width: 560px;
+    width: 46.66%;
+    min-width: 420px;
+}
+
+.news-subscribe article:first-child {
+    margin-right: 2.22%;
+}
+
+.map {
+    display: flex;
+}
+
+.map section {
+    width: 300px;
+    padding: 30px 25px;
+    margin-left: auto;
+}
+
+/*Catalog-creamy*/
+
+
+
+/*Footer*/
+
+.main-footer {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-menu {
+    margin-left: auto;
+    margin-right: auto;
 }
