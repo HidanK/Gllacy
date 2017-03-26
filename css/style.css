@@ -63,10 +63,11 @@ img {
 .main-nav li,
 .main-user li {
     list-style: none;
+    position: relative;
 }
 
 .submenu-catalog {
-    display: none;
+    position: absolute;
 }
 
 .main-nav li {
@@ -221,7 +222,14 @@ img {
 
 /*Catalog-creamy*/
 
+.body-catalog {
+    background-color: #849d8f;
+}
 
+.main-catalog-content {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*Footer*/
 
